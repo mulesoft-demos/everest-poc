@@ -188,11 +188,6 @@
             <scope>provided</scope>
         </dependency>
     <dependency>
-            <groupId>4d34a677-fff8-40b2-896b-024389cae4de</groupId>
-            <artifactId>mule-module-policy-quote-to-bind-process-api</artifactId>
-            <version>1.0.2</version>
-        </dependency>
-    <dependency>
             <groupId>com.mulesoft.weave</groupId>
             <artifactId>mule-plugin-weave</artifactId>
             <version>${mule.version}</version>
