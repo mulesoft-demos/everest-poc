@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:policy-quoteto-bind-process-api="http://www.mulesoft.org/schema/mule/policy-quoteto-bind-process-api" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+<mule xmlns:dw="http://www.mulesoft.org/schema/mule/ee/dw" xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns="http://www.mulesoft.org/schema/mule/core" xmlns:apikit="http://www.mulesoft.org/schema/mule/apikit" xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns:spring="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
 http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
 http://www.mulesoft.org/schema/mule/apikit http://www.mulesoft.org/schema/mule/apikit/current/mule-apikit.xsd
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
-http://www.mulesoft.org/schema/mule/policy-quoteto-bind-process-api http://www.mulesoft.org/schema/mule/policy-quoteto-bind-process-api/current/mule-policy-quoteto-bind-process-api.xsd
 http://www.mulesoft.org/schema/mule/ee/dw http://www.mulesoft.org/schema/mule/ee/dw/current/dw.xsd">
     <http:listener-config name="policy-quote-to-bind-process-api-httpListenerConfig" host="0.0.0.0" port="8081" doc:name="HTTP Listener Configuration"/>
     <apikit:config name="policy-quote-to-bind-process-api-config" raml="policy-quote-to-bind-process-api.raml" consoleEnabled="false" doc:name="Router"/>
-    <policy-quoteto-bind-process-api:config name="Policy_Quote_to_Bind_Process_API__Configuration" doc:name="Policy Quote to Bind Process API: Configuration"/>
     <flow name="policy-quote-to-bind-process-api-main">
         <http:listener config-ref="policy-quote-to-bind-process-api-httpListenerConfig" path="/api/*" doc:name="HTTP"/>
         <apikit:router config-ref="policy-quote-to-bind-process-api-config" doc:name="APIkit Router"/>
