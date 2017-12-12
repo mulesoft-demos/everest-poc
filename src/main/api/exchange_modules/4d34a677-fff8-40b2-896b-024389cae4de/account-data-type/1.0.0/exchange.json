@@ -1,0 +1,1 @@
+{"main":"account-data-type.raml","name":"Account Data Type","classifier":"raml-fragment","tags":["library"],"dependencies":[{"groupId":"4d34a677-fff8-40b2-896b-024389cae4de","assetId":"address-data-typeraml","version":"1.0.0"}],"groupId":"4d34a677-fff8-40b2-896b-024389cae4de","assetId":"account-data-type","version":"1.0.0"}

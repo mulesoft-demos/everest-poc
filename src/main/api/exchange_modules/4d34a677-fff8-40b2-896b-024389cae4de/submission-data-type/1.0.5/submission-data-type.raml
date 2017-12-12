@@ -1,0 +1,36 @@
+#%RAML 1.0 Library
+usage:
+
+types: 
+  Submission:
+    properties: 
+      AffinityBusinessCd?: string
+      BranchOfficeCd?: string
+      BusinessSegmentCd?: string
+      DistributionChannelCd?: string
+      SubmissionEffDt?: string
+      SubmissionExpDt?: string
+      SubmissionReceivedDt?: string
+      SubmittedLOBCd?: string
+      MarketSegmentCd?: string
+      WINSAgentCd?: string
+      QuotedPremiumAmt?: string
+      NAICSCd?: string
+      QuotedLOBCd?: string
+      SubmissionQuotedDt?: string
+      SubmissionStatusCd?: string
+      SubmissionTypeCd?: string
+      CarrierCd?: string
+      UnderwriterAssistantCd?: string
+      UnderwriterCd?: string
+      StateAbbrCd?: string
+      SubmittedExcessPrimary?: string
+      QuotedExcessPrimary?: string
+      Subline?: 
+        type: sublinecode[]
+      SubProducerCd?: string
+      IsPublicPrivateInd?: string
+
+
+
+  sublinecode: string

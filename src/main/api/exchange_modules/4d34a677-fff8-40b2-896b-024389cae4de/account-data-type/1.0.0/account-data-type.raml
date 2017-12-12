@@ -1,0 +1,18 @@
+#%RAML 1.0 Library
+usage: Defines the standard structure of Account Data
+
+uses: 
+  Address: /exchange_modules/4d34a677-fff8-40b2-896b-024389cae4de/address-data-typeraml/1.0.0/address-data-typeraml.raml
+
+types:     
+  account:
+    properties: 
+      accountNumber?: string
+      accountVersionNumber?: string
+      name: string
+      email?: string
+      billingAddress?: Address.address
+      shippingAddress?: Address.address
+      overOFACblock?: string
+      active: string
+
